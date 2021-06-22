@@ -1,6 +1,6 @@
 import LoginPage from '../pageobjects/loginPage'
 import NotePage from '../pageobjects/notePage'
-import * as constants from '../utils/constants'
+import constants from '../utils/constants'
 
 describe ('Login Test Suite', () => {
 

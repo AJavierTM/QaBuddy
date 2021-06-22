@@ -1,7 +1,7 @@
 import Page from './page'
 
 class LoginPage extends Page {
-    get loginButton (){return $$('a[href="/users/showlogin"]')[0]}
+    get loginButton () {return $$('a[href="/users/showlogin"]')[0] }
     get signInLink (){return $('a[href="/Users/showLogin"]')}
     get userEmail (){return $('#email')}
     get userPassword (){return $('#password')}
