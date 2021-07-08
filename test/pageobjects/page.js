@@ -1,11 +1,7 @@
+import wdio from '../../wdio.conf';
 
-
-import wdio from '../../wdio.conf'
-
-export default class Page{
-
-    open(){
-        return browser.url(wdio.config.baseUrl);
-    }
-
+export default class Page {
+  open() {
+    return browser.url(wdio.config.baseUrl);
+  }
 }
