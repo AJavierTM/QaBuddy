@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx wdio run ./wdio.conf.js",
-    "lint": "./node_modules/.bin/eslint --ext .js ."
+    "lint": "eslint --ext .js .",
+    "back": "newman run test/backend/TodoistApp.postman_collection.json -e test/backend/todoist-env.postman_environment.json"
+
   },
   "keywords": [
     "WebdriverIO",
@@ -14,7 +16,8 @@
   "author": "Javier Trujillo",
   "license": "ISC",
   "dependencies": {
-    "@wdio/cli": "^7.7.2"
+    "@wdio/cli": "^7.7.2",
+    "newman": "^5.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
